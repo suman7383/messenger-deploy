@@ -32,7 +32,7 @@ const Card=()=>{
     })
   }
   useEffect(()=>{
-  getData();
+      getData();
   refresh();
   }, // eslint-disable-next-line
   [])

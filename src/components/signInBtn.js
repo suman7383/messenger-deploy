@@ -10,6 +10,7 @@ export default function SignInBtn(){
    let userSignIn=await SignInWithGoogle();
         if(userSignIn) setUser(userSignIn)
   }
+
     return(
         <div className="signOutBtn" onClick={()=>signInClick()}>
           <h3>

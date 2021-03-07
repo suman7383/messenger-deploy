@@ -1,4 +1,4 @@
-import React,{useContext, useEffect} from 'react';
+import React,{useContext, useEffect, useState} from 'react';
 import firebase, { auth } from "./firebase";
 import './index.css'
 import Title from './components/Title';
@@ -8,8 +8,8 @@ import { UserContext } from './context/user';
 
 const Card=()=>{
 
-  const [arr,setArr]=useContext(UserContext).arr;
-  const [,setUser]=useContext(UserContext).user;
+  const [arr,setArr]=useState([]);
+  const [user,setUser]=useContext(UserContext).user;
 
   const getData=async()=>{
     await firebase.firestore().collection('message').orderBy('timeStamp','asc').onSnapshot((query)=>{
@@ -31,11 +31,12 @@ const Card=()=>{
       setUser(user);
     })
   }
+
   useEffect(()=>{
       getData();
-  refresh();
+      refresh();
   }, // eslint-disable-next-line
-  [])
+  [user])
 
   console.log(arr);
 

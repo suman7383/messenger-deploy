@@ -3,13 +3,11 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import {UserContext} from '../context/user';
-import firebase from '../firebase';
 
 
 
 export default function Header(){
     const [user,]=useContext(UserContext).user;
-    const [arr,]=useContext(UserContext).arr;
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -17,15 +15,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const deleteClick=()=>{
-  let temp=arr.length;
-  while(temp!==0){
-  firebase.firestore().collection("message").doc(arr[arr.length-1].id).delete();
-  temp--;
-  }
-}
-
-console.log(arr);
 
 const classes = useStyles();
 
@@ -41,7 +30,6 @@ const classes = useStyles();
             color="secondary"
             className={classes.button}
             startIcon={<DeleteIcon />}
-            onClick={()=>deleteClick()}
           >
             Delete
           </Button>

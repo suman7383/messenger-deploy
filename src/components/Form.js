@@ -39,10 +39,6 @@ function sendText(e){
   else{
     
   }
-
-  
-
-
 }
 
 const classes = useStyles();

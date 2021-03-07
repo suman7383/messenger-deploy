@@ -8,6 +8,7 @@ const MessageBoxMain=(props)=>{
      const [user,]=useContext(UserContext).user;
      
     return(
+      
         <div className="messageBox">
         {props.data.map((data)=>( 
          data.userId===user.uid

@@ -1,4 +1,4 @@
-import React,{useContext, useEffect, useState} from 'react';
+import React,{useContext, useEffect} from 'react';
 import firebase, { auth } from "./firebase";
 import './index.css'
 import Title from './components/Title';
@@ -8,7 +8,7 @@ import { UserContext } from './context/user';
 
 const Card=()=>{
 
-  const [arr,setArr]=useState([]);
+  const [arr,setArr]=useContext(UserContext).arr;
   const [,setUser]=useContext(UserContext).user;
 
   const getData=async()=>{
@@ -36,6 +36,8 @@ const Card=()=>{
   refresh();
   }, // eslint-disable-next-line
   [])
+
+  console.log(arr);
 
   return (
     <>

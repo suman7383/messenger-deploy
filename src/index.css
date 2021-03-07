@@ -1,0 +1,295 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: #efefef;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+  width: 40vw;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin: 0;
+}
+
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0.4rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  background-color: #5cdb95;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+  padding: 0rem;
+  border-radius: 0.4rem;
+}
+
+.cardTitleBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.cardTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #5680e9;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.5);
+  margin: 1rem;
+  margin-right: 0rem;
+  border-radius: 0.4rem;
+  width: 65%;
+}
+
+.cardTitle h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  letter-spacing: 0.03rem;
+}
+
+.signOutBtn {
+  display: flex;
+  justify-content: center;
+  background-color: #5680e9;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.5);
+  margin: 1rem 1rem;
+  margin-left: 0rem;
+  border-radius: 0.4rem;
+  width: 20%;
+}
+.signOutBtn h3 {
+  margin: 0;
+  padding-top: 0.1rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 0.03rem;
+}
+
+.signOutBtn :hover {
+  cursor: pointer;
+}
+
+.signInBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #5680e9;
+  width: 25%;
+}
+
+.signInBtn :hover {
+  cursor: pointer;
+}
+
+.signInBtn h3 {
+  margin: 0.5rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 0.03rem;
+}
+.messageBox {
+  display: block;
+  width: 58vw;
+  height: 55vh;
+  margin: 1rem;
+  overflow: scroll;
+  margin-bottom: 0;
+  border-radius: 0.4rem;
+  background-color: whitesmoke;
+}
+
+.mainMessage {
+  margin: 1rem;
+}
+.sendBtn {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  margin: 0.8rem;
+}
+
+.btn {
+  width: 60%;
+  padding: 0.3rem;
+  justify-content: right;
+  font-size: 1.2rem;
+}
+
+.textField {
+  display: flex;
+  width: 98%;
+}
+
+.sendBtn :hover {
+  background: transparent;
+  color: #ff4c4c;
+  cursor: pointer;
+}
+
+.textBoxLeft {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.4);
+  margin: 0.5rem;
+  float: left;
+  width: 50%;
+  height: auto;
+  overflow-wrap: break-word;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+  border-radius: 0.3rem;
+}
+
+.textBoxRight {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  float: right;
+  background-color: rgba(255, 0, 0, 0.4);
+  justify-content: flex-end;
+  margin: 0.5rem;
+  width: 50%;
+  height: auto;
+  overflow-wrap: break-word;
+  box-shadow: 0.07rem 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+  border-radius: 0.3rem;
+}
+.msgBox {
+  width: 100%;
+}
+
+.displayMsg {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  text-align: left;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+  width: 94%;
+}
+
+.displayNameText {
+  margin: 0.1rem 0.3rem;
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.msgBoxLeft {
+  width: 100%;
+}
+.displayMsgLeft {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  text-align: left;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+  width: 94%;
+}
+
+.displayNameTextLeft {
+  margin: 0.1rem 0.3rem;
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.LeftImgCont {
+  display: flex;
+  width: 38px;
+  margin: 0.8rem 0.4rem;
+  flex-wrap: wrap;
+  border-radius: 50%;
+}
+
+.LeftImg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  border-radius: 3rem;
+  margin: 0rem 0.2rem;
+  clear: both;
+}
+
+.mainLeftBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mainRightBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.RightImg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  border-radius: 3rem;
+  margin: 0rem 0.2rem;
+  clear: both;
+}
+
+.RightImgCont {
+  display: flex;
+  width: 40px;
+  margin: 0.8rem 0.5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    width: 95vw;
+  }
+
+  .messageBox {
+    display: block;
+    width: 95vw;
+    height: 45vh;
+    margin: 1rem;
+    overflow: scroll;
+    margin-bottom: 0;
+    border-radius: 0.4rem;
+    background-color: whitesmoke;
+  }
+}

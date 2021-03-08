@@ -21,7 +21,7 @@ function sendText(e){
 
   e.preventDefault()
 
-  if(user){
+  if(user && text!==""){
 
     firebase.firestore().collection("message").add({
     from:user.displayName,

@@ -127,7 +127,7 @@ code {
 .signInBtn h3 {
   margin: 0.5rem;
   padding: 0.2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: lighter;
   letter-spacing: 0.03rem;
 }
@@ -319,41 +319,5 @@ code {
     margin-bottom: 0;
     border: 0.1rem solid rgba(0, 0, 0, 0.25);
     border-radius: 0.4rem;
-  }
-
-  .cardTitle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgba(0, 0, 255, 0.3);
-    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.356);
-    margin: 1rem;
-    margin-right: 0rem;
-    border-radius: 0.4rem;
-    width: 63%;
-  }
-
-  .signOutBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 255, 0.3);
-    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.356);
-    margin: 1rem 1rem;
-    margin-left: 0rem;
-    border-radius: 0.4rem;
-    width: 15%;
-  }
-  .signOutBtn h3 {
-    margin: 0;
-    padding-top: 0.3rem;
-    font-size: 1rem;
-    font-weight: lighter;
-    letter-spacing: 0.03rem;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .signOutBtn :hover {
-    cursor: pointer;
   }
 }

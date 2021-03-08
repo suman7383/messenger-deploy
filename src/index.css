@@ -76,7 +76,7 @@ code {
   margin: 1rem;
   margin-right: 0rem;
   border-radius: 0.4rem;
-  width: 65%;
+  width: 64.5%;
 }
 
 .cardTitle h3 {
@@ -100,7 +100,7 @@ code {
 .signOutBtn h3 {
   margin: 0;
   padding-top: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: lighter;
   letter-spacing: 0.03rem;
   font-family: "Poppins", sans-serif;
@@ -321,9 +321,22 @@ code {
     border-radius: 0.4rem;
   }
 
+  .cardTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.356);
+    margin: 1rem;
+    margin-right: 0rem;
+    border-radius: 0.4rem;
+    width: 63%;
+  }
+
   .signOutBtn {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 255, 0.3);
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.356);
     margin: 1rem 1rem;

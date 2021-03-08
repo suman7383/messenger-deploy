@@ -6,6 +6,9 @@ import MessageBoxMain from './messageBoxMain';
 const MessageBox=(props)=>{
 
     const [user,]=useContext(UserContext).user;
+
+
+
     return (
         <>
         {user?<MessageBoxMain data={props.data}/>:<div className="messageBox"></div>}

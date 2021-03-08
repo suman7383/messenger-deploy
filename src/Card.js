@@ -10,6 +10,7 @@ const Card=()=>{
 
   const [arr,setArr]=useState([]);
   const [user,setUser]=useContext(UserContext).user;
+  
 
   const getData=async()=>{
     await firebase.firestore().collection('message').orderBy('timeStamp','asc').onSnapshot((query)=>{
@@ -24,8 +25,10 @@ const Card=()=>{
       }))
       );
   });
-  }
+
   
+  }
+
   const refresh=async()=>{
     await auth.onAuthStateChanged((user)=>{
       setUser(user);
@@ -42,7 +45,7 @@ const Card=()=>{
   return (
     <>
       <Title/>
-      <MessageBox data={arr}/>
+      <MessageBox id="messageBox" data={arr}/>
       <Form/>  
       
     </>

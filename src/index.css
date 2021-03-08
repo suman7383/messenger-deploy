@@ -2,10 +2,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: #efefef;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  filter: contrast(1);
+  background: url(./components/image.jpg);
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,6 +26,7 @@ code {
 .header {
   display: flex;
   justify-content: space-around;
+  margin: 0;
   width: 100%;
 
   margin: 0;
@@ -35,16 +36,22 @@ code {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  background: white;
   justify-content: center;
   width: 100%;
   border-radius: 0.4rem;
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
-  background-color: #5cdb95;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
+.messenger {
+  margin: 0;
+}
 .header h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: 1.5rem 0;
   font-weight: lighter;
+  font-family: "Akaya Telivigala", cursive;
 }
 
 .card {
@@ -64,8 +71,8 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #5680e9;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.3);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.356);
   margin: 1rem;
   margin-right: 0rem;
   border-radius: 0.4rem;
@@ -77,13 +84,14 @@ code {
   font-size: 1.3rem;
   font-weight: lighter;
   letter-spacing: 0.03rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .signOutBtn {
   display: flex;
   justify-content: center;
-  background-color: #5680e9;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.3);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 255, 0.356);
   margin: 1rem 1rem;
   margin-left: 0rem;
   border-radius: 0.4rem;
@@ -91,10 +99,11 @@ code {
 }
 .signOutBtn h3 {
   margin: 0;
-  padding-top: 0.1rem;
+  padding-top: 0.3rem;
   font-size: 1rem;
   font-weight: lighter;
   letter-spacing: 0.03rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .signOutBtn :hover {
@@ -127,10 +136,12 @@ code {
   width: 58vw;
   height: 55vh;
   margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-size: contain;
   overflow: scroll;
   margin-bottom: 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.25);
   border-radius: 0.4rem;
-  background-color: whitesmoke;
 }
 
 .mainMessage {
@@ -157,7 +168,7 @@ code {
 
 .sendBtn :hover {
   background: transparent;
-  color: #ff4c4c;
+
   cursor: pointer;
 }
 
@@ -165,13 +176,13 @@ code {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(0, 255, 0, 0.25);
   margin: 0.5rem;
   float: left;
   width: 50%;
   height: auto;
   overflow-wrap: break-word;
-  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0.07rem 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
   border-radius: 0.3rem;
 }
 
@@ -180,7 +191,7 @@ code {
   flex-wrap: wrap;
   padding: 0;
   float: right;
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(0, 255, 0, 0.25);
   justify-content: flex-end;
   margin: 0.5rem;
   width: 50%;
@@ -198,6 +209,7 @@ code {
   margin-top: 0.2rem;
   text-align: left;
   margin-bottom: 0.2rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   width: 94%;
 }
@@ -217,7 +229,8 @@ code {
   margin-top: 0.2rem;
   text-align: left;
   margin-bottom: 0.2rem;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   width: 94%;
 }
 
@@ -300,9 +313,11 @@ code {
     width: 95vw;
     height: 45vh;
     margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-size: contain;
     overflow: scroll;
     margin-bottom: 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.25);
     border-radius: 0.4rem;
-    background-color: whitesmoke;
   }
 }

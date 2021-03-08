@@ -38,7 +38,6 @@ const Card=()=>{
   }, // eslint-disable-next-line
   [user])
 
-  console.log(arr);
 
   return (
     <>
